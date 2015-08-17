@@ -21,6 +21,15 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
+$padding : 4px;
+$border-radius : 4px;
+$border-color : #ccc;
+
+body{
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 13px;
+}
+
 .dropzone, .dropzone * {
   box-sizing: border-box;
 }
@@ -31,18 +40,24 @@
   .dz-preview {
     position: relative;
     display: inline-block;
-    width: 120px;
+    //width: 120px;
     margin: 0.5em;
+    padding: $padding;
+    border-radius: $border-radius;
+    border: solid 1px $border-color;
 
     .dz-progress {
       display: block;
-      height: 15px;
-      border: 1px solid #aaa;
+      height: 6px;
+      border-radius: 3px;
+      background: #ddd;
+
       .dz-upload {
         display: block;
         height: 100%;
         width: 0;
-        background: green;
+        border-radius: 3px;
+        background: dodgerblue;
       }
     }
 
@@ -74,8 +89,4 @@
 
 
   }
-}
-
-.nhahv {
-  background: red;
 }
