@@ -478,7 +478,7 @@ class Dropzone extends Emitter
     maxfilesexceeded: noop
 
     maxfilesreached: noop
-    
+
     queuecomplete: noop
 
     addedfiles: noop
@@ -504,15 +504,22 @@ class Dropzone extends Emitter
                           </svg>
                         </div>
                         <div class="dz-error-mark">
-                          <svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-                            <title>Error</title>
-                            <defs></defs>
-                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-                              <g id="Check-+-Oval-2" sketch:type="MSLayerGroup" stroke="#747474" stroke-opacity="0.198794158" fill="#FFFFFF" fill-opacity="0.816519475">
-                                <path d="M32.6568542,29 L38.3106978,23.3461564 C39.8771021,21.7797521 39.8758057,19.2483887 38.3137085,17.6862915 C36.7547899,16.1273729 34.2176035,16.1255422 32.6538436,17.6893022 L27,23.3431458 L21.3461564,17.6893022 C19.7823965,16.1255422 17.2452101,16.1273729 15.6862915,17.6862915 C14.1241943,19.2483887 14.1228979,21.7797521 15.6893022,23.3461564 L21.3431458,29 L15.6893022,34.6538436 C14.1228979,36.2202479 14.1241943,38.7516113 15.6862915,40.3137085 C17.2452101,41.8726271 19.7823965,41.8744578 21.3461564,40.3106978 L27,34.6568542 L32.6538436,40.3106978 C34.2176035,41.8744578 36.7547899,41.8726271 38.3137085,40.3137085 C39.8758057,38.7516113 39.8771021,36.2202479 38.3106978,34.6538436 L32.6568542,29 Z M27,53 C41.3594035,53 53,41.3594035 53,27 C53,12.6405965 41.3594035,1 27,1 C12.6405965,1 1,12.6405965 1,27 C1,41.3594035 12.6405965,53 27,53 Z" id="Oval-2" sketch:type="MSShapeGroup"></path>
-                              </g>
-                            </g>
-                          </svg>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>dz-error-mark</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M26,52 C40.3594035,52 52,40.3594035 52,26 C52,11.6405965 40.3594035,0 26,0 C11.6405965,0 0,11.6405965 0,26 C0,40.3594035 11.6405965,52 26,52 Z M25.7877084,21.6395422 L18.1680274,14.0198612 C18.1680274,14.0198612 15.060205,12.9795175 14.0198613,14.0198612 C12.9795176,15.0602048 14.0198613,18.1680273 14.0198613,18.1680273 L21.6395423,25.7877083 L14.0198613,33.4073893 C14.0198613,33.4073893 12.9861009,36.5217957 14.0198613,37.5555561 C15.0536217,38.5893165 18.1680274,37.5555554 18.1680274,37.5555554 L25.7877084,29.9358744 L33.4073894,37.5555554 C33.4073894,37.5555554 36.5195794,38.5915319 37.5555552,37.5555561 C38.5915311,36.5195803 37.5555556,33.4073893 37.5555556,33.4073893 L29.9358745,25.7877083 L37.5555556,18.1680273 C37.5555556,18.1680273 38.5936615,15.0579671 37.5555556,14.0198612 C36.5174496,12.9817552 33.4073894,14.0198612 33.4073894,14.0198612 L25.7877084,21.6395422 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Shape-+-Path" sketch:type="MSLayerGroup" transform="translate(2.000000, 2.000000)" opacity="1">
+            <g id="Path">
+                <use stroke="#79000E" fill-opacity="0.8" fill="#D65263" fill-rule="evenodd" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                <use stroke="#D0011B" fill="none" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>
                         </div>
                       </div>
                       """
@@ -1025,7 +1032,7 @@ class Dropzone extends Emitter
 
       @emit "thumbnail", file, thumbnail
       callback() if callback?
-      
+
     img.onerror = callback if callback?
 
     img.src = imageUrl
